@@ -1,0 +1,13 @@
+# code
+vscode
+intellij
+postman
+
+# media
+spotify
+
+# chat
+slack
+
+# work
+keybase

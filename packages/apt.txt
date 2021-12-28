@@ -1,0 +1,11 @@
+# used for this repo
+git wget curl stow python snapd
+
+# sys utils
+htop tldr direnv
+
+# term
+zsh
+
+# vpn
+vpnc network-manager-vpnc network-manager-vpnc-gnome
