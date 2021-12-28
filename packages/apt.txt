@@ -1,11 +1,20 @@
 # used for this repo
-git wget curl stow python snapd
+git 
+wget 
+curl 
+stow 
+snapd
 
 # sys utils
-htop tldr direnv
+htop 
+tldr 
+direnv
 
 # term
-alacritty zsh
+alacritty 
+zsh
 
 # vpn
-vpnc network-manager-vpnc network-manager-vpnc-gnome
+vpnc 
+network-manager-vpnc 
+network-manager-vpnc-gnome

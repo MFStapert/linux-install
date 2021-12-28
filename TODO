@@ -1,4 +1,5 @@
-- [ ] add uninstall script for apt programms
+- [ ] proper sudo check at start
+- [ ] update uninstall packages file
 - [ ] add apt programms and alliases for
     - exa
     - bat
