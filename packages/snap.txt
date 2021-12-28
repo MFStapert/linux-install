@@ -1,13 +1,16 @@
 # code
-vscode
-intellij
+code --classic
+intellij-idea-ultimate --classic
 postman
 
 # media
 spotify
 
 # chat
-slack
+slack --classic
+
+# term
+starship
 
 # work
-keybase
+keybase --classic

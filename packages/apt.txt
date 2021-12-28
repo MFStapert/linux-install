@@ -5,7 +5,7 @@ git wget curl stow python snapd
 htop tldr direnv
 
 # term
-zsh
+alacritty zsh
 
 # vpn
 vpnc network-manager-vpnc network-manager-vpnc-gnome

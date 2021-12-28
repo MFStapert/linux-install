@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Installing docker..."
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
