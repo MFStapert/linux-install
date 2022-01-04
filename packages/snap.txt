@@ -11,6 +11,3 @@ slack --classic
 
 # term
 starship
-
-# work
-keybase --classic

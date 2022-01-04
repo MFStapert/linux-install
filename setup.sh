@@ -3,8 +3,14 @@ user_home=$HOME
 path=$(realpath $0)
 dir=$(dirname $path)
 
-# add proper check
-sudo -v
+if [ "$EUID" == 0 ]; 
+then
+    echo "This script shouldn't be ran as root"
+    exit;
+else 
+  sudo -v
+fi
+
 sudo apt-get update
 
 apt_to_install=$(grep -v '^\s*$\|^\s*\#' $dir/packages/apt.txt)
@@ -17,10 +23,12 @@ done <<< "$apt_to_install"
 
 
 apt_to_remove=$(grep -v '^\s*$\|^\s*\#' $dir/packages/apt_uninstall.txt | tr "\n" " ")
-echo "Found the following apt packages to remove: $apt_to_remove"
-
 echo "Trying to uninstall apt packages..."
-sudo apt-get remove -y $apt_to_remove > /dev/null
+while read -r pkg; do
+  echo "Uninstalling $pkg..."
+  sudo apt-get remove -y $apt_to_remove > /dev/null
+done <<< "$apt_to_remove"
+
 sudo apt-get autoremove -y > /dev/null
 
 snap_to_install=$(grep -v '^\s*$\|^\s*\#' $dir/packages/snap.txt)
@@ -32,14 +40,15 @@ while read -r pkg; do
 done <<< "$snap_to_install"
 
 echo "Trying standalone installs..."
-find "$dir/install" -type f -name '*.sh' -exec bash {} \;
+find "$dir/install" -type f -name '*.sh' -exec bash {} > /dev/null \; \
 
 # stow dotfiles
 echo "stowing dotfiles..."
 sudo stow dotfiles --target=$HOME
 
 # asdf post install
-echo "asdf post install..."
+echo "asdf install..."
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
 $HOME/.asdf/bin/asdf plugin-add nodejs
 $HOME/.asdf/bin/asdf install
 

@@ -1,7 +1,6 @@
+- [ ] fix docker install
+- [ ] fix dropbox install
 - [ ] proper sudo check at start
 - [ ] update uninstall packages file
-- [ ] add apt programms and alliases for
-    - exa
-    - bat
 - [ ] proper xdg folder setup
-- [ ] theming without starship or ohmyzsh
+- [ ] theming without starship

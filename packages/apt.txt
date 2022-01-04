@@ -10,9 +10,12 @@ htop
 tldr 
 direnv
 
-# term
-alacritty 
+# term 
 zsh
+exa
+bat
+ripgrep
+fd-find
 
 # vpn
 vpnc 

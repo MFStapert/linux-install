@@ -1,2 +1,13 @@
+# git
+alias ga="git add ."
+alias gb="git checkout -b"
+alias gc="git commit -m"
+alias gca="git commit --amend -n"
+alias gp="git push --set-upstream origin"
+
+alias cat="batcat"
+alias ls="exa"
+alias fd="fdfind"
+
 # fetch and rebase master
 # rebase current branch to master

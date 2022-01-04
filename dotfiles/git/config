@@ -5,5 +5,8 @@
 [pull]
   rebase = true
 
+[push]
+  default = current
+
 [core]
 	excludesfile = ~/git/ignore
