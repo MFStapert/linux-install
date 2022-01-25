@@ -17,6 +17,9 @@ bat
 ripgrep
 fd-find
 
+# gnome
+gnome-tweaks
+
 # vpn
 vpnc 
 network-manager-vpnc 

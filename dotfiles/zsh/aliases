@@ -1,13 +1,29 @@
+# open dotfiles
+alias odf="code projects/linux-install/dotfiles"
+
 # git
 alias ga="git add ."
+
 alias gb="git checkout -b"
+
 alias gc="git commit -m"
 alias gca="git commit --amend -n"
+
 alias gp="git push --set-upstream origin"
 
+alias gfm="git fetch origin main:main"
+
+alias gr="git rebase"
+alias grm="git rebase main"
+alias gra="git rebase --abort"
+alias grc="git rebase --continue"
+
+alias gprune="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
+
+# cli utils
 alias cat="batcat"
 alias ls="exa"
 alias fd="fdfind"
 
-# fetch and rebase master
-# rebase current branch to master
+# type alliases
+alias -s {md,yml,json}=code

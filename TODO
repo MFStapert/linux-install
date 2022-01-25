@@ -1,6 +1,10 @@
+- [ ] mv files to config folder?
+- [ ] angular config
 - [ ] fix docker install
 - [ ] fix dropbox install
 - [ ] proper sudo check at start
 - [ ] update uninstall packages file
 - [ ] proper xdg folder setup
+
 - [ ] theming without starship
+- [ ] maybe setup without zsh
