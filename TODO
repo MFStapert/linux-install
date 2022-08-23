@@ -1,4 +1,4 @@
-- [ ] mv files to config folder?
+- [ ] mv files to config folder
 - [ ] angular config
 - [ ] fix docker install
 - [ ] fix dropbox install
@@ -7,4 +7,3 @@
 - [ ] proper xdg folder setup
 
 - [ ] theming without starship
-- [ ] maybe setup without zsh

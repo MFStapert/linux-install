@@ -1,6 +1,5 @@
 [user]
     name = Marijn Stapert
-    email = mf.stapert@users.noreply.github.com
 
 [pull]
   rebase = true

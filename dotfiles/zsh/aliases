@@ -18,8 +18,6 @@ alias grm="git rebase main"
 alias gra="git rebase --abort"
 alias grc="git rebase --continue"
 
-alias gprune="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
-
 # cli utils
 alias cat="batcat"
 alias ls="exa"
