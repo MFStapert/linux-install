@@ -1,6 +1,9 @@
 {
     "cli": {
-      "analytics": false
+      "analytics": false,
+      "completion": {
+        "prompted": true
+      }
     },
     "version": 1
   }
